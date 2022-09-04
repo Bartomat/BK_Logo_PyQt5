@@ -412,8 +412,8 @@ class MeineGUI(QMainWindow):
                 exec(f"self.range_slider_{slider_code}.blockSignals( True )")
                 
                 exec(f"self.range_slider_{slider_code}.setSliderPosition({dict_4_update['rgb_values'][slider_code]})")
-                print(f"self.range_slider_{slider_code}.setSliderPosition({dict_4_update['rgb_values'][slider_code]})")  # DEBUG
-                print(f"self.label_slider_{slider_code}_werte.setText( f'Farbgrenzen {slider_code}: {{self.range_slider_{slider_code}.value()}}' )")  # DEBUG
+                # print(f"self.range_slider_{slider_code}.setSliderPosition({dict_4_update['rgb_values'][slider_code]})")  # DEBUG
+                # print(f"self.label_slider_{slider_code}_werte.setText( f'Farbgrenzen {slider_code}: {{self.range_slider_{slider_code}.value()}}' )")  # DEBUG
                 exec(f"self.label_slider_{slider_code}_werte.setText( f'Farbgrenzen {slider_code}: {{self.range_slider_{slider_code}.value()}}' )")
                 
                 exec(f"self.range_slider_{slider_code}.blockSignals( False )")
@@ -525,10 +525,10 @@ class MeineGUI(QMainWindow):
                 
                 exec(f"self.range_slider_{slider_code}.setSliderPosition("
                      f"{dict_4_update['rgb_values'][slider_code]})")
-                print(f"self.range_slider_{slider_code}.setSliderPos"
-                      f"ition({dict_4_update['rgb_values'][slider_code]})")  # DEBUG
-                print(f"self.label_slider_{slider_code}_werte.setText( f'Farbgrenzen {slider_code}: {{"
-                      f"self.range_slider_{slider_code}.value()}}' )")  # DEBUG
+                # print(f"self.range_slider_{slider_code}.setSliderPos"
+                #       f"ition({dict_4_update['rgb_values'][slider_code]})")  # DEBUG
+                # print(f"self.label_slider_{slider_code}_werte.setText( f'Farbgrenzen {slider_code}: {{"
+                #       f"self.range_slider_{slider_code}.value()}}' )")  # DEBUG
                 exec(f"self.label_slider_{slider_code}_werte.setText( f'Farbgrenzen {slider_code}: {{"
                      f"self.range_slider_{slider_code}.value()}}' )")
                 
